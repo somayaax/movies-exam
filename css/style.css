@@ -1,0 +1,95 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    background-color: #000000;
+    font-weight: 400;
+}
+.sidebar{
+    left: 0;
+    background-color: #f8f6f6;
+    z-index: 9999;
+}
+#toggleIcon{
+    cursor: pointer;
+    padding: 10px;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    z-index: 999;
+    background-color: #000;
+}
+#menu a{
+    text-decoration: none;
+    color: #f9f6f6 !important;
+    transition: all ease-in 0.4s;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+#menu li{
+    opacity: 0;
+    padding-top: 500px;
+}
+#menu a:hover{
+    color: #ff655c !important;
+}
+#menu p{
+    color: #999;
+}
+.sidebar, #menu{
+    transition: all ease 0.5s;
+}
+#search .input, #contact input{
+    border: none;
+    border-bottom: 1px solid #ffffffb3;
+    color: #535a3c;
+    background-color: transparent;
+}
+::-webkit-input-placeholder{
+    text-align: center;
+}
+
+#movies .overlay{
+    background-color: rgba(255, 255,255, 0.7);
+    color: #000;
+    top: 100%;
+    visibility: hidden;
+    transition: all 1s;
+}
+#movies .item:hover .overlay{
+    top: 0;
+    visibility: visible;
+}
+#movies .col-sm-6{
+    padding-bottom: 1.5rem;
+}
+
+.overlay h2{
+    font-weight: 300;
+}
+.alert{
+    padding: 0.3rem 1rem;
+    display: none;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+
+.container{
+    padding-left: 60px;
+}
+
+@media screen and (min-width: 1000px) {
+    .container{
+        width: 900px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1100px;
+       
+    }
+}
